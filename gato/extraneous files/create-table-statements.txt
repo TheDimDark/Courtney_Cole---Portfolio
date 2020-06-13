@@ -1,0 +1,99 @@
+CREATE TABLE Accounts 
+(
+	Account_ID int NOT NULL UNIQUE AUTO_INCREMENT,
+	Is_Owner boolean NOT NULL DEFAULT 0,
+	Is_Admin boolean NOT NULL DEFAULT 0,
+	Is_Moderator boolean NOT NULL DEFAULT 0,
+	Username VARCHAR(50) NOT NULL UNIQUE,
+	Password VARCHAR(300) NOT NULL,
+	Email VARCHAR(300) NOT NULL UNIQUE,
+	Creation_Timestamp TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	Is_Deactivated boolean NOT NULL DEFAULT 0,
+	PRIMARY KEY (Account_ID)
+);
+
+CREATE TABLE Bans 
+(
+	Ban_ID int NOT NULL UNIQUE AUTO_INCREMENT,
+	Banned_Account_ID int NOT NULL,
+	Banner_Account_ID int NOT NULL,
+	Ban_Reason VARCHAR(50) NOT NULL,
+	Start_Timestamp TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	End_Timestamp TIMESTAMP NOT NULL,
+	PRIMARY KEY (Ban_ID),
+	FOREIGN KEY (Banned_Account_ID) REFERENCES Accounts(Account_ID),
+    	FOREIGN KEY (Banner_Account_ID) REFERENCES Accounts(Account_ID)
+);
+
+CREATE TABLE Categories 
+(
+	Category_ID int NOT NULL UNIQUE AUTO_INCREMENT,
+	Account_Posted_ID int NOT NULL,
+	Is_Flagged boolean NOT NULL DEFAULT 0,
+	Flagger_Account_ID int,
+	Creation_Timestamp TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	Category_Subject VARCHAR(300) NOT NULL,
+	PRIMARY KEY (Category_ID),
+	FOREIGN KEY (Account_Posted_ID) REFERENCES Accounts(Account_ID),
+	FOREIGN KEY (Flagger_Account_ID) REFERENCES Accounts(Account_ID)
+);
+
+CREATE TABLE Threads
+(
+	Thread_ID int NOT NULL UNIQUE AUTO_INCREMENT,
+	Category_ID int NOT NULL,
+	Account_Posted_ID int NOT NULL,
+	Is_Locked boolean NOT NULL DEFAULT 0,
+	Locker_Account_ID int,
+	Is_Flagged boolean NOT NULL DEFAULT 0,
+	Flagger_Account_ID int,
+	Was_Edited boolean NOT NULL DEFAULT 0,
+	Last_Changed TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+	Thread_Subject VARCHAR(300) NOT NULL,
+	Post_Text VARCHAR(40000) NOT NULL,
+	PRIMARY KEY (Thread_ID),
+	FOREIGN KEY (Account_Posted_ID) REFERENCES Accounts(Account_ID),
+	FOREIGN KEY (Category_ID) REFERENCES Categories(Category_ID),
+	FOREIGN KEY (Locker_Account_ID) REFERENCES Accounts(Account_ID),
+	FOREIGN KEY (Flagger_Account_ID) REFERENCES Accounts(Account_ID)
+);
+
+CREATE TABLE Subscribed_To
+(
+	Subscription_ID int NOT NULL UNIQUE AUTO_INCREMENT,
+	Account_ID int NOT NULL,
+	Thread_ID int NOT NULL,
+	PRIMARY KEY (Subscription_ID),
+	FOREIGN KEY (Account_ID) REFERENCES Accounts(Account_ID),
+	FOREIGN KEY (Thread_ID) REFERENCES Threads(Thread_ID)
+);
+
+CREATE TABLE Posts
+(
+	Post_ID int NOT NULL UNIQUE AUTO_INCREMENT,
+	Thread_ID int NOT NULL,
+	Account_Posted_ID int NOT NULL,
+	Was_Edited boolean NOT NULL DEFAULT 0,
+	Last_Changed TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+	Post_Text VARCHAR(40000) NOT NULL,
+	PRIMARY KEY (Post_ID),
+	FOREIGN KEY (Account_Posted_ID) REFERENCES Accounts(Account_ID),
+	FOREIGN KEY (Thread_ID) REFERENCES Threads(Thread_ID)
+);
+
+CREATE TABLE Reports
+(
+	Report_ID int NOT NULL UNIQUE AUTO_INCREMENT,
+	Reported_Account_ID int NOT NULL,
+	Reported_Post_ID int NOT NULL,
+	Post_Text VARCHAR(40000) NOT NULL,
+	Is_Thread_Post boolean NOT NULL DEFAULT 0,
+	Reporter_Account_ID int NOT NULL,
+	Creation_Timestamp TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	Report_Reason VARCHAR(50),
+	Report_Description VARCHAR(20000) NOT NULL,
+	PRIMARY KEY (Report_ID),
+	FOREIGN KEY (Reported_Account_ID) REFERENCES Accounts(Account_ID),
+	FOREIGN KEY (Reported_Post_ID) REFERENCES Posts(Post_ID),
+	FOREIGN KEY (Reporter_Account_ID) REFERENCES Accounts(Account_ID)
+);

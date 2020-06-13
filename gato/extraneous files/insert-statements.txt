@@ -1,0 +1,258 @@
+INSERT INTO Accounts
+(Is_Owner, Username, Password, Email)
+VALUES
+(1, 'RamenMummy', '$2y$10$yiCwP17YIWqKt0lA455ay.pGRsDylSsdZWaZ1srINa3ZzAV27BTUG', 'cec53380@ucmo.edu');
+
+INSERT INTO Accounts
+(Is_Owner, Username, Password, Email)
+VALUES
+(1, 'Zombidud', '$2y$10$BR13Re9VIGexEBLGbMw6veVuCH8pEJkasY27SOYRm3RBkta/kiee.', 'imr10200@ucmo.edu');
+
+---------------------------------------------------------------------------------------------------------------------------
+
+INSERT INTO Categories
+(Account_Posted_ID, Is_Flagged, Flagger_Account_ID, Category_Subject)
+VALUES
+(1, 1, 1, 'Rules and Site Information');
+
+INSERT INTO Categories
+(Account_Posted_ID, Category_Subject)
+VALUES
+(1, 'Tabletop Games');
+
+INSERT INTO Categories
+(Account_Posted_ID, Category_Subject)
+VALUES
+(1, 'Video Games');
+
+INSERT INTO Categories
+(Account_Posted_ID, Category_Subject)
+VALUES
+(1, 'Misc. Topics');
+
+---------------------------------------------------------------------------------------------------------------------------
+
+INSERT INTO Threads
+(Category_ID, Account_Posted_ID, Is_Locked, Locker_Account_ID, Is_Flagged, Flagger_Account_ID, Thread_Subject, Post_Text)
+VALUES
+(1, 1, 1, 1, 1, 1, 'Basic Rules and Etiquette', '[size=32]Hello new user(s)! ...And welcome to [color=#36DEB4][b]gato[/b][/color]![/size]
+
+This is a place for you to [color=#36DEB4][b]geek about things online[/b][/color] with other people wishing to do the same. Here you can talk about that coding problem you were stuck on, discuss that new video game that has caught your interest, or even hold a scholarly debate about your favorite Star Trek characters.
+
+And while this is all fine and dandy, there are some site-wide rules you are going to have to follow. Let\'s get started.');
+
+INSERT INTO Threads
+(Category_ID, Account_Posted_ID, Is_Flagged, Flagger_Account_ID, Thread_Subject, Post_Text)
+VALUES
+(1, 1, 1, 1, 'Ranked Officer Headquarters', '[size=32]Welcome to HQ.[/size]
+
+This is a place for users to communicate with various ranked officers beyond reports. 
+
+Please note, this is [b]NOT[/b] a general chat room. This is a place to talk about possible improvements to the site, general issues, suggestions, bugs, and so on. This is [b]NOT[/b] a place to report singular users for malicious posts and actions. However, if an entire thread is bringing forth  hateful, suggestive, or otherwise suspicious content, feel free to bring it forth to our attention.
+
+If you filed a report that you feel isn\'t being looked at, feel free to send a reminder to us here. However, DO NOT mention the reported post/account/topic/etc. Please use the numerical Report ID and exclusively that when referring to your report. Your post will otherwise be deleted by our ranked officers.
+
+Please keep discussion civil and relevant. This is not the place to discuss why you were banned or why an account was deactivated. Otherwise, we thank you for your feedback.
+');
+
+INSERT INTO Threads
+(Category_ID, Account_Posted_ID, Is_Locked, Locker_Account_ID, Is_Flagged, Flagger_Account_ID, Thread_Subject, Post_Text)
+VALUES
+(1, 2, 1, 1, 1, 1, 'BBCode Formatting for Posts', '[size=32][b]BBCode Introduction[/b][/size]
+
+This site uses a formatting framework called [b]BBCode[/b]. BBCode is a way to give users the ability to format their posts any way they like. Many tags can be used on the same content by nesting the tags together. You can have tags within tags!
+
+The following is a document of every BBCode tag available on this site. These tags may work differently on other sites.
+
+[size=20][b][bbcode][b]: Bold[/bbcode][/b][/size]
+    [b]BBCode[/b]: [bbcode]This is a [b]bold[/b] example[/bbcode]
+    [b]Output[/b]: This is a [b]bold[/b] example
+
+[size=20][b][bbcode][bbcode][/bbcode]: Any BBCode in this tag will not be parsed.[/b][/size]
+    [b]BBCode[/b]: BBCode for bold: [bbcode][bbcode][b]bold[/b][/bbcode][/bbcode] Output: [bbcode][b]bold[/b][/bbcode]
+    [b]Output[/b]: BBCode for bold: [bbcode][b]bold[/b][/bbcode] Output: [b]bold[/b]
+
+[size=20][b][bbcode][code][/bbcode]: Does the same thing as the [bbcode][bbcode][/bbcode] tag, but also formats the text like computer code.[/b][/size]
+    [b]BBCode[/b]: Check out this code![bbcode][code]
+                   String text = "Hello world!";
+                   print(text);[/code][/bbcode]
+    [b]Output[/b]: Check out this code![code]
+                   String text = "Hello world!";
+                   print(text);[/code]
+                   
+[size=20][b][bbcode][color][/bbcode]: Applies a specified color to your text. Works with hex values and many words.[/b][/size]
+    [b]BBCode[/b]: [bbcode]Check out this [color=blue]blue[/color] word![/bbcode]
+    [b]Output[/b]: Check out this [color=blue]blue[/color] word!
+                   
+[size=20][b][bbcode][email][/bbcode]: Makes your text an email link. If no email is specified as a parameter, it will use the contained text as the email.[/b][/size]
+    [b]BBCode[/b]: [bbcode]Email [email=gato@gato.com]us[/email] at [email]gato@gato.com[/email][/bbcode]
+    [b]Output[/b]: Email [email=gato@gato.com]us[/email] at [email]gato@gato.com[/email]
+                   
+[size=20][b][bbcode][font][/bbcode]: Displays the text in the specified font.[/b][/size]
+    [b]BBCode[/b]: [bbcode][font=Impact]I love impact![/font][/bbcode]
+    [b]Output[/b]: [font=Impact]I love impact![/font]
+                   
+[size=20][b][bbcode][i][/bbcode]: Italics[/b][/size]
+    [b]BBCode[/b]:[bbcode]This is an [i]italics[/i] example[/bbcode]
+    [b]Output[/b]: This is an [i]italics[/i] example
+                   
+[size=20][b][bbcode][img][/bbcode]: Displays an image. Scales image based on value given in pixels or value given in percent of container width.[/b][/size]
+    [b]BBCode[/b]: [bbcode][img=100]http://localhost/gato/assets/gato_logo.png[/img][/bbcode]
+    [b]Output[/b]: [img=100]http://localhost/gato/assets/gato_logo.png[/img]
+                  
+[size=20][b][bbcode][list]&[li]: List and List item. Will produce an unordered list unless specified to be an ordered list. [*] and no closing tag can be substituted for [li].[/bbcode][/b][/size]
+    [b]BBCode[/b]: [bbcode]Steps for success: [list=o][li]Step 1[/li][li]Step 2[/li][*]???[li]Profit!![/li][/list][/bbcode]
+    [b]Output[/b]: Steps for success: [list=o][li]Step 1[/li][li]Step 2[/li][*]???[li]Profit!![/li][/list]
+
+[size=20][b][bbcode][quote][/bbcode]: Quote[/b][/size]
+    [b]BBCode[/b]:
+        [bbcode]I have something to say about what you said here, Bruce:
+        [quote=Bruce]I like pinapple on pizza[/quote]
+        Me too![/bbcode]
+    [b]Output[/b]:
+        I have something to say about what you said here, Bruce: [quote=Bruce]I like pinapple on pizza[/quote]        Me too!
+
+[size=20][b][bbcode][s][/bbcode]: Strike-through[/b][/size]
+    [b]BBCode[/b]: [bbcode]I like [s]pineapple and[/s] sausage on pizza[/bbcode]
+    [b]Output[/b]: I like [s]pineapple and[/s] sausage on pizza
+
+[size=20][b][bbcode][size][/bbcode]: Change the size of the text to the specified size.[/b][/size]
+    [b]BBCode[/b]: [bbcode]This text is [size=20]BIG[/size].[/bbcode]
+    [b]Output[/b]: This text is [size=20]BIG[/size].
+
+[size=20][b][bbcode][sub][/bbcode]: Subscript[/b][/size]
+    [b]BBCode[/b]: [bbcode]Water is H[sub]2[/sub]O.[/bbcode]
+    [b]Output[/b]: Water is H[sub]2[/sub]O.
+
+[size=20][b][bbcode][sup][/bbcode]: Superscript[/b][/size]
+    [b]BBCode[/b]: [bbcode]2[sup]2[/sup] = 4[/bbcode]
+    [b]Output[/b]: 2[sup]2[/sup] = 4
+
+[size=20][b][bbcode][textalign][/bbcode]: Align the text following the specified rule. Left(l), Right(r), Center(c), and Justify(j).[/b][/size]
+    [b]BBCode[/b]: [bbcode][textalign=l]Left Text[/textalign][textalign=c]Middle Text[/textalign][textalign=r]Right Text[/textalign][/bbcode]
+    [b]Output[/b]: [textalign=l]Left Text[/textalign][textalign=c]Middle Text[/textalign][textalign=r]Right Text[/textalign]
+
+[size=20][b][bbcode][table] [tbody] [tfoot] [thead] [td] [th] [tr][/bbcode]: Tags related to creating tables. These tags follow the standard HTML structure for tables. You can also specify column span[/b][/size]
+    [b]BBCode[/b]: [bbcode]
+        [table]
+            [thead]
+                [tr]
+                    [th][/th]
+                    [th]Mario[/th]
+                    [th]Luigi[/th]
+                    [th]Yoshi[/th]
+                    [th]Wario[/th]
+                    [th]Waluigi[/th]
+                [/tr]
+            [/thead]
+            [tbody]
+                [tr]
+                    [th]Color[/th]
+                    [td]red[/td]
+                    [td=2]green[/td]
+                    [td]yellow[/td]
+                    [td]purple[/td]
+                [/tr]
+            [/tbody]
+        [/table][/bbcode]
+    [b]Output[/b]: 
+        [table]
+            [thead]
+                [tr]
+                    [th][/th]
+                    [th]Mario[/th]
+                    [th]Luigi[/th]
+                    [th]Yoshi[/th]
+                    [th]Wario[/th]
+                    [th]Waluigi[/th]
+                [/tr]
+            [/thead]
+            [tbody]
+                [tr]
+                    [th]Color[/th]
+                    [td]red[/td]
+                    [td=2]green[/td]
+                    [td]yellow[/td]
+                    [td]purple[/td]
+                [/tr]
+            [/tbody]
+        [/table]
+
+[size=20][b][bbcode][u][/bbcode]: Underline[/b][/size]
+    [b]BBCode[/b]: [bbcode]This word is [u]underlined[/u][/bbcode]
+    [b]Output[/b]: This word is [u]underlined[/u]
+
+[size=20][b][bbcode][url][/bbcode]: Makes your text an url link. If no url is specified as a parameter, it will use the contained text as the url.[/b][/size]
+    [b]BBCode[/b]: [bbcode]Click [url=/gato]here[/url] to go to [url]/gato[/url][/bbcode]
+    [b]Output[/b]: Click [url=/gato]here[/url] to go to [url]/gato[/url]');
+
+---------------------------------------------------------------------------------------------------------------------------
+
+INSERT INTO Subscribed_To
+(Account_ID, Thread_ID)
+VALUES
+(1, 1);
+
+INSERT INTO Subscribed_To
+(Account_ID, Thread_ID)
+VALUES
+(2, 1);
+
+INSERT INTO Subscribed_To
+(Account_ID, Thread_ID)
+VALUES
+(1, 2);
+
+INSERT INTO Subscribed_To
+(Account_ID, Thread_ID)
+VALUES
+(2, 2);
+
+---------------------------------------------------------------------------------------------------------------------------
+
+INSERT INTO Posts
+(Thread_ID, Account_Posted_ID, Post_Text)
+VALUES
+(1, 1, '[size=20][color=#FD9078]Part 1:[/color] Where to Post and What to Post[/size]
+
+Threads on this website are organized into categories that specify the topic(s) that each thread should be relevant to you. For example, the [i]Rules and Site Information[/i] Category holding this thread implies that the topic of all of its contained threads should be about rules and other helpful information to users. Other categories, such as the [i]Tabletop Games[/i] and [i]Video Games[/i] categories should contain information related to their subjects. If you want to share a campaign idea for Dungeons and Dragons, you\'d do that in [i]Tabletop Games[/i], while a post about a new Nintendo release would belong in [i]Video Games[/i]. If you want to create a thread that you feel doesn\'t belong in a specific category, place it into the [i]Misc. Topics[/i] category instead.
+
+On top of that, we recommend you keep any posts within a thread relevant to the more specific topic of that thread. Unrelated posts could be deleted by moderators, and repeated offenses could result in action being taken against your account. The severity of actions will determine the extension of punishment, but accounts with a large amount of recent bans against them will be deactivated, and the email tied to it unreleased.
+
+Most importantly, keep discussions civil. While cussing is allowed on a thread-to-thread basis, ranked officers on [b][color=#36DEB4]gato[/color] will not tolerate hate-speech, threats, or harassment of any kind[/b]. To add to that, [b]this is not a place to share adult content[/b]; minors are watching. Users who witness or are subject to such treatment should file a report of the offending posts in order to bring attention to a moderator faster. Should a whole thread be devolving into argument, the thread will be locked in order to prevent any further uncivil discussion.');
+
+INSERT INTO Posts
+(Thread_ID, Account_Posted_ID, Post_Text)
+VALUES
+(1, 1, '[size=20][color=#FD9078]Part 2:[/color] Interacting with Ranked Officers and Filing Reports[/size]
+
+There are three types of ranked officers on the site, ranked in increasing order as follows:
+
+[color=#EBE08D][b]Moderators[/b][/color]:
+Users of this rank are able to lock threads and handle requests involving unranked users. Reports filed against mods are handled by admins and owners. They are able to temporarily ban accounts.
+[color=#FD9078][b]Administrators[/b][/color]:
+Users of this rank have the same abilities as mods, but are also able to flag threads and are able to deactivate troublesome accounts. They are able to appoint/dismiss moderators. Reports filed against them are handled by the users with an owner rank.
+[color=#36DEB4][b]Owners[/b][/color]:
+Owners hold all other powers involving the site, and can flag and create categories for threads to fall under. They are able to appoint/dismiss both moderators and administrators. Reports filed against an owner on this site are handled by another owner besides them.
+
+Ranked officers are put in a structured hierarchy like this in order to prevent abuse of their powers as best as possible. We want to make sure any possibly corrupt or over-reacting user of rank can have a report filed and read against them fairly, so that they are not able to control the system in a way that could potentially harm the environment of the site. Whether the offending account is a ranked or unranked one, we suggest you file a report if they are violating policy or acting in a suspicious or potentially abusive way. They will be hadled as soon as possible. 
+
+If you feel as if your report isn\'t being handled in the appropriate amount of time, then you can always make a post in our [i]Ranked Officer Headquarters[/i] thread. This should help draw attention to your issue. This thread also serves as a means of which to report threads as a whole, or site-wide issues. It is also a place to recommend changes involving the forum, such as recommending a new category.');
+
+INSERT INTO Posts
+(Thread_ID, Account_Posted_ID, Post_Text)
+VALUES
+(1, 1, '[size=20][color=#FD9078]Part 3:[/color] Personal and Account Information[/size]
+
+Something that we want every user to know is that you are not prompted to give us any personal information besides their email used to link the account, and we will never intentionally share your email with any other person, company, or entity.  Please also be aware that [b]ranked officers will never ask you for your password[/b]. You are also advised [b]never to share any personal or identifying information that you would be uncomfortable with strangers knowing[/b].
+
+You can update your email, password, and username whenever you wish at the account settings page. However, emails and usernames are uniquely tied to each account, and can\'t be shared between accounts due to this. Should the email or username be already taken, you will not be allowed to make that change. All of this information will be kept upon deactivation of your account.
+
+All ranked officers will have their current rank displayed besides their names on posts, and will always have it for show in the details of their account. Likewise, any and all bans made against your account will be displayed on your account profile when viewed. Should an account be deactivated, this will be viewable on their profile as well.');
+
+INSERT INTO Posts
+(Thread_ID, Account_Posted_ID, Post_Text)
+VALUES
+(1, 1, '[size=20][color=#FD9078]Part 4:[/color] Rule Changes and Updates[/size]
+
+Any updates to the rules and so on can be found here. General news about version updates will posted in a thread within the [i]Rules and Site Information[/i].');

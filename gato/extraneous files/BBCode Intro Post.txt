@@ -1,0 +1,127 @@
+[size=32][b]BBCode Introduction[/b][/size]
+
+This site uses a formatting framework called [b]BBCode[/b]. BBCode is a way to give users the ability to format their posts any way they like. Many tags can be used on the same content by nesting the tags together. You can have tags within tags!
+
+The following is a document of every BBCode tag available on this site. These tags may work differently on other sites.
+
+[size=20][b][bbcode][b]: Bold[/bbcode][/b][/size]
+    [b]BBCode[/b]: [bbcode]This is a [b]bold[/b] example[/bbcode]
+    [b]Output[/b]: This is a [b]bold[/b] example
+
+[size=20][b][bbcode][bbcode][/bbcode]: Any BBCode in this tag will not be parsed.[/b][/size]
+    [b]BBCode[/b]: BBCode for bold: [bbcode][bbcode][b]bold[/b][/bbcode][/bbcode] Output: [bbcode][b]bold[/b][/bbcode]
+    [b]Output[/b]: BBCode for bold: [bbcode][b]bold[/b][/bbcode] Output: [b]bold[/b]
+
+[size=20][b][bbcode][code][/bbcode]: Does the same thing as the [bbcode][bbcode][/bbcode] tag, but also formats the text like computer code.[/b][/size]
+    [b]BBCode[/b]: Check out this code![bbcode][code]
+                   String text = "Hello world!";
+                   print(text);[/code][/bbcode]
+    [b]Output[/b]: Check out this code![code]
+                   String text = "Hello world!";
+                   print(text);[/code]
+                   
+[size=20][b][bbcode][color][/bbcode]: Applies a specified color to your text. Works with hex values and many words.[/b][/size]
+    [b]BBCode[/b]: [bbcode]Check out this [color=blue]blue[/color] word![/bbcode]
+    [b]Output[/b]: Check out this [color=blue]blue[/color] word!
+                   
+[size=20][b][bbcode][email][/bbcode]: Makes your text an email link. If no email is specified as a parameter, it will use the contained text as the email.[/b][/size]
+    [b]BBCode[/b]: [bbcode]Email [email=gato@gato.com]us[/email] at [email]gato@gato.com[/email][/bbcode]
+    [b]Output[/b]: Email [email=gato@gato.com]us[/email] at [email]gato@gato.com[/email]
+                   
+[size=20][b][bbcode][font][/bbcode]: Displays the text in the specified font.[/b][/size]
+    [b]BBCode[/b]: [bbcode][font=Impact]I love impact![/font][/bbcode]
+    [b]Output[/b]: [font=Impact]I love impact![/font]
+                   
+[size=20][b][bbcode][i][/bbcode]: Italics[/b][/size]
+    [b]BBCode[/b]:[bbcode]This is an [i]italics[/i] example[/bbcode]
+    [b]Output[/b]: This is an [i]italics[/i] example
+                   
+[size=20][b][bbcode][img][/bbcode]: Displays an image. Scales image based on value given in pixels or value given in percent of container width.[/b][/size]
+    [b]BBCode[/b]: [bbcode][img=100]http://localhost/gato/assets/gato_logo.png[/img][/bbcode]
+    [b]Output[/b]: [img=100]http://localhost/gato/assets/gato_logo.png[/img]
+                  
+[size=20][b][bbcode][list]&[li]: List and List item. Will produce an unordered list unless specified to be an ordered list. [*] and no closing tag can be substituted for [li].[/bbcode][/b][/size]
+    [b]BBCode[/b]: [bbcode]Steps for success: [list=o][li]Step 1[/li][li]Step 2[/li][*]???[li]Profit!![/li][/list][/bbcode]
+    [b]Output[/b]: Steps for success: [list=o][li]Step 1[/li][li]Step 2[/li][*]???[li]Profit!![/li][/list]
+
+[size=20][b][bbcode][quote][/bbcode]: Quote[/b][/size]
+    [b]BBCode[/b]:
+        [bbcode]I have something to say about what you said here, Bruce:
+        [quote=Bruce]I like pinapple on pizza[/quote]
+        Me too![/bbcode]
+    [b]Output[/b]:
+        I have something to say about what you said here, Bruce: [quote=Bruce]I like pinapple on pizza[/quote]        Me too!
+
+[size=20][b][bbcode][s][/bbcode]: Strike-through[/b][/size]
+    [b]BBCode[/b]: [bbcode]I like [s]pineapple and[/s] sausage on pizza[/bbcode]
+    [b]Output[/b]: I like [s]pineapple and[/s] sausage on pizza
+
+[size=20][b][bbcode][size][/bbcode]: Change the size of the text to the specified size.[/b][/size]
+    [b]BBCode[/b]: [bbcode]This text is [size=20]BIG[/size].[/bbcode]
+    [b]Output[/b]: This text is [size=20]BIG[/size].
+
+[size=20][b][bbcode][sub][/bbcode]: Subscript[/b][/size]
+    [b]BBCode[/b]: [bbcode]Water is H[sub]2[/sub]O.[/bbcode]
+    [b]Output[/b]: Water is H[sub]2[/sub]O.
+
+[size=20][b][bbcode][sup][/bbcode]: Superscript[/b][/size]
+    [b]BBCode[/b]: [bbcode]2[sup]2[/sup] = 4[/bbcode]
+    [b]Output[/b]: 2[sup]2[/sup] = 4
+
+[size=20][b][bbcode][textalign][/bbcode]: Align the text following the specified rule. Left(l), Right(r), Center(c), and Justify(j).[/b][/size]
+    [b]BBCode[/b]: [bbcode][textalign=l]Left Text[/textalign][textalign=c]Middle Text[/textalign][textalign=r]Right Text[/textalign][/bbcode]
+    [b]Output[/b]: [textalign=l]Left Text[/textalign][textalign=c]Middle Text[/textalign][textalign=r]Right Text[/textalign]
+
+[size=20][b][bbcode][table] [tbody] [tfoot] [thead] [td] [th] [tr][/bbcode]: Tags related to creating tables. These tags follow the standard HTML structure for tables. You can also specify column span[/b][/size]
+    [b]BBCode[/b]: [bbcode]
+        [table]
+            [thead]
+                [tr]
+                    [th][/th]
+                    [th]Mario[/th]
+                    [th]Luigi[/th]
+                    [th]Yoshi[/th]
+                    [th]Wario[/th]
+                    [th]Waluigi[/th]
+                [/tr]
+            [/thead]
+            [tbody]
+                [tr]
+                    [th]Color[/th]
+                    [td]red[/td]
+                    [td=2]green[/td]
+                    [td]yellow[/td]
+                    [td]purple[/td]
+                [/tr]
+            [/tbody]
+        [/table][/bbcode]
+    [b]Output[/b]: 
+        [table]
+            [thead]
+                [tr]
+                    [th][/th]
+                    [th]Mario[/th]
+                    [th]Luigi[/th]
+                    [th]Yoshi[/th]
+                    [th]Wario[/th]
+                    [th]Waluigi[/th]
+                [/tr]
+            [/thead]
+            [tbody]
+                [tr]
+                    [th]Color[/th]
+                    [td]red[/td]
+                    [td=2]green[/td]
+                    [td]yellow[/td]
+                    [td]purple[/td]
+                [/tr]
+            [/tbody]
+        [/table]
+
+[size=20][b][bbcode][u][/bbcode]: Underline[/b][/size]
+    [b]BBCode[/b]: [bbcode]This word is [u]underlined[/u][/bbcode]
+    [b]Output[/b]: This word is [u]underlined[/u]
+
+[size=20][b][bbcode][url][/bbcode]: Makes your text an url link. If no url is specified as a parameter, it will use the contained text as the url.[/b][/size]
+    [b]BBCode[/b]: [bbcode]Click [url=/gato]here[/url] to go to [url]/gato[/url][/bbcode]
+    [b]Output[/b]: Click [url=/gato]here[/url] to go to [url]/gato[/url]

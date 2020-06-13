@@ -1,0 +1,40 @@
+[size=32]Hello new user(s)! ...And welcome to [color=#36DEB4][b]gato[/b][/color]![/size]
+
+This is a place for you to [color=#36DEB4][b]geek about things online[/b][/color] with other people wishing to do the same. Here you can talk about that coding problem you were stuck on, discuss that new video game that has caught your interest, or even hold a scholarly debate about your favorite Star Trek characters.
+
+And while this is all fine and dandy, there are some site-wide rules you are going to have to follow. Let's get started.
+
+[size=20][color=#FD9078]Part 1:[/color] Where to Post and What to Post[/size]
+
+Threads on this website are organized into categories that specify the topic(s) that each thread should be relevant to you. For example, the [i]Rules and Site Information[/i] Category holding this thread implies that the topic of all of its contained threads should be about rules and other helpful information to users. Other categories, such as the [i]Tabletop Games[/i] and [i]Video Games[/i] categories should contain information related to their subjects. If you want to share a campaign idea for Dungeons and Dragons, you'd do that in [i]Tabletop Games[/i], while a post about a new Nintendo release would belong in [i]Video Games[/i]. If you want to create a thread that you feel doesn't belong in a specific category, place it into the [i]Misc. Topics[/i] category instead.
+
+On top of that, we recommend you keep any posts within a thread relevant to the more specific topic of that thread. Unrelated posts could be deleted by moderators, and repeated offenses could result in action being taken against your account. The severity of actions will determine the extension of punishment, but accounts with a large amount of recent bans against them will be deactivated, and the email tied to it unreleased.
+
+Most importantly, keep discussions civil. While cussing is allowed on a thread-to-thread basis, ranked officers on [b][color=#36DEB4]gato[/color] will not tolerate hate-speech, threats, or harassment of any kind[/b]. To add to that, [b]this is not a place to share adult content[/b]; minors are watching. Users who witness or are subject to such treatment should file a report of the offending posts in order to bring attention to a moderator faster. Should a whole thread be devolving into argument, the thread will be locked in order to prevent any further uncivil discussion.
+
+[size=20][color=#FD9078]Part 2:[/color] Interacting with Ranked Officers and Filing Reports[/size]
+
+There are three types of ranked officers on the site, ranked in increasing order as follows:
+
+[color=#EBE08D][b]Moderators[/b][/color]:
+Users of this rank are able to lock threads and handle requests involving unranked users. Reports filed against mods are handled by admins and owners. They are able to temporarily ban accounts.
+[color=#FD9078][b]Administrators[/b][/color]:
+Users of this rank have the same abilities as mods, but are also able to flag threads and are able to deactivate troublesome accounts. They are able to appoint/dismiss moderators. Reports filed against them are handled by the users with an owner rank.
+[color=#36DEB4][b]Owners[/b][/color]:
+Owners hold all other powers involving the site, and can flag and create categories for threads to fall under. They are able to appoint/dismiss both moderators and administrators. Reports filed against an owner on this site are handled by another owner besides them.
+
+Ranked officers are put in a structured hierarchy like this in order to prevent abuse of their powers as best as possible. We want to make sure any possibly corrupt or over-reacting user of rank can have a report filed and read against them fairly, so that they are not able to control the system in a way that could potentially harm the environment of the site. Whether the offending account is a ranked or unranked one, we suggest you file a report if they are violating policy or acting in a suspicious or potentially abusive way. They will be handled as soon as possible. 
+
+If you feel as if your report isn't being handled in the appropriate amount of time, then you can always make a post in our [i]Ranked Officer Headquarters[/i] thread. This should help draw attention to your issue. This thread also serves as a means of which to report threads as a whole, or site-wide issues. It is also a place to recommend changes involving the forum, such as recommending a new category.
+
+[size=20][color=#FD9078]Part 3:[/color] Personal and Account Information[/size]
+
+Something that we want every user to know is that you are not prompted to give us any personal information besides their email used to link the account, and we will never intentionally share your email with any other person, company, or entity.  Please also be aware that [b]ranked officers will never ask you for your password[/b]. You are also advised [b]never to share any personal or identifying information that you would be uncomfortable with strangers knowing[/b].
+
+You can update your email, password, and username whenever you wish at the account settings page. However, emails and usernames are uniquely tied to each account, and can't be shared between accounts due to this. Should the email or username be already taken, you will not be allowed to make that change. All of this information will be kept upon deactivation of your account.
+
+All ranked officers will have their current rank displayed besides their names on posts, and will always have it for show in the details of their account. Likewise, any and all bans made against your account will be displayed on your account profile when viewed. Should an account be deactivated, this will be viewable on their profile as well.
+
+[size=20][color=#FD9078]Part 4:[/color] Rule Changes and Updates[/size]
+
+Any updates to the rules and so on can be found here. General news about version updates will posted in a thread within the [i]Rules and Site Information[/i].

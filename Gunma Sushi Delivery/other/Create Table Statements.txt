@@ -1,0 +1,36 @@
+CREATE TABLE CEC_GSD_Orders
+(
+    Order_ID int NOT NULL UNIQUE AUTO_INCREMENT,
+    Customer_Name VARCHAR(300) NOT NULL,
+    Total_Price double NOT NULL,
+    Street VARCHAR(300) NOT NULL,
+    City VARCHAR(300) NOT NULL,
+    State VARCHAR(2) NOT NULL,
+    Zip int NOT NULL,
+    Order_Note VARCHAR(3000),
+    Time_Ordered DATETIME,
+    Time_Ready DATETIME,
+    Time_Delivered DATETIME,
+    PRIMARY KEY (Order_ID)
+);
+
+CREATE TABLE CEC_GSD_Sushi
+(
+    Sushi_ID int NOT NULL UNIQUE AUTO_INCREMENT,
+    Name VARCHAR(150) NOT NULL,
+    Price double NOT NULL,
+    Description VARCHAR(3000) NOT NULL,
+    Image_Name VARCHAR(154) NOT NULL,
+    PRIMARY KEY (Sushi_ID)
+);
+
+CREATE TABLE CEC_GSD_SushiOrdered
+(
+    Relation_ID int NOT NULL UNIQUE AUTO_INCREMENT,
+    Order_ID int NOT NULL,
+    Sushi_ID int NOT NULL,
+    Number_Of_Sushi int NOT NULL,
+    FOREIGN KEY (Order_ID) REFERENCES CEC_GSD_Orders(Order_ID),
+    FOREIGN KEY (Sushi_ID) REFERENCES CEC_GSD_Sushi(Sushi_ID),
+    PRIMARY KEY (Relation_ID)
+);

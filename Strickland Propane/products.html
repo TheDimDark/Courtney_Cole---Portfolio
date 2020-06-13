@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Strickland Propane </title>
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+        <link rel = "stylesheet" href = "style.css">
+        <script  type = "text/javascript" src = "javascript.js"></script>
+	</head>
+	<body onload = "resetSearch(); displaySearch()">
+        <div class = "header">
+            <h1> Strickland Propane </h1>
+            <h3> Taste the meat, not the heat. </h3>
+        </div>
+            
+        <div class = "navigationBar">
+            <a href = "index.html"> Home </a> <a href = "products.html"> Browse Our Products </a> <a href = "orders.html"> File a Work Order </a>
+        </div>
+
+        <div class = "general">
+            <div class = "productSearchBar">
+                <div class = "text">
+                    Search by name: <br>
+                    <input type = "text" id = "productName" width = "50pt">
+                </div>
+                <div class = "type">
+                    Search by type: <br>
+                    <select id = "productType">
+                        <option value = "ALL"> None Selected </option>
+                        <option value = "GRILL"> Grills </option>
+                        <option value = "TANK"> Tanks </option>
+                        <option value = "MERCH"> Merchandise </option>
+                        <option value = "MISC"> Misc. </option>
+                    </select>
+                </div>
+                <div class = "price">
+                    Price by: <br>
+                    <select id = "priceOrder">
+                        <option value = "ASC"> Ascending </option>
+                        <option value = "DESC"> Descending </option>
+                    </select>
+                </div>
+                <div class = "button" onclick = "displaySearch()">
+                    <p> &#8981; </p>
+                </div>
+            </div>
+            <div id = "productsSpot" class = "productsSpot">
+
+            </div>
+        </div>
+
+        <div class = "footer">
+            <div class = "line"></div>
+            <br>
+            <p> Strickland Propane&#8482; is property of Buck Strickland. </p>
+            <p> To contact our Human Resources team, please use one of the methods below: </p>
+            <p> Email us at <a href = "mailto:Donna@StricklandPropane.com"> Donna@StricklandPropane.com </a> </p>
+            <p> Call us at (912) 748-4422 </p>
+            <br>
+            <div class = "line"></div>
+        </div>
+	</body>
+</html>

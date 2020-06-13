@@ -1,0 +1,426 @@
+/*
+    CSS for all of the web-pages
+*/
+
+body
+{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    background-image: url("woodPattern.jpg");
+}
+
+div.header
+{
+    text-align: center;
+    background-image: linear-gradient(#B2B2B2, #CFCFCF, #B2B2B2);
+    padding-top: 5pt;
+    padding-bottom: 5pt;
+    padding-left: 5pt;
+    padding-right: 5pt;
+    margin-left: 5pt;
+    margin-right: 5pt;
+    overflow: hidden;
+}
+
+div.header h1
+{
+    font-family: Verdana, Geneva, sans-serif;
+    text-shadow: 2px 2px #000000;
+    padding: 0;
+    padding-bottom: 5pt;
+    margin: 0;
+    color: #C8372B;
+    font-size: 50pt;
+}
+
+div.header h3
+{
+    color: #373737;
+    padding: 0;
+    margin: 0;
+}
+
+div.navigationBar
+{
+    background-color: #C8372B;
+    text-align: center;
+    display: flex;
+    font-size: 12pt;
+    color: #CFCFCF;
+    padding-top: 5pt;
+    padding-bottom: 5pt;
+    margin-left: 5pt;
+    margin-right: 5pt;
+    justify-content: center;
+    overflow: hidden;
+}
+
+div.navigationBar a
+{
+    padding-left: 10pt;
+    padding-right: 10pt;
+    margin-left: 5pt;
+    margin-right: 5pt;
+    font-size: 12pt;
+    color: #CFCFCF;
+    width: 15%;
+    text-decoration: none;
+    float: center;
+}
+
+div.navigationBar a:hover
+{
+    font-weight: bold;
+    border: 0;
+}
+
+div.general
+{
+    background-color: rgba(224, 224, 224, 0.8);
+    padding-top: 5pt;
+    padding-bottom: 5pt;
+    padding-left: 5pt;
+    padding-right: 5pt;
+    margin-left: 5pt;
+    margin-right: 5pt;
+    overflow: hidden;
+}
+
+div.footer
+{
+    background-color: #373737;
+    padding-top: 5pt;
+    padding-bottom: 5pt;
+    padding-left: 5pt;
+    padding-right: 5pt;
+    margin-left: 5pt;
+    margin-right: 5pt;
+    text-align: center;
+}
+
+div.footer p
+{
+    margin: 0;
+    color: #CFCFCF;
+    font-size: 7pt;
+}
+
+div.footer a
+{
+    color: #C8372B;
+    text-decoration: none;
+}
+div.footer a:hover
+{
+    color: #C8372B;
+    text-decoration: underline;
+}
+
+div.line
+{
+    background-color: #C8372B;
+    padding-top: 1pt;
+    padding-bottom: 1pt;
+}
+
+/*
+    CSS for the home page
+*/
+
+div.info
+{
+    overflow: hidden;
+    background-color: #373737;
+    padding-top: 5pt;
+    padding-bottom: 5pt;
+    margin-left: 5pt;
+    margin-right: 5pt;
+    text-align: center;
+}
+
+div.info div.general
+{
+    background-color: rgba(224, 224, 224, 1);
+    padding-left: 20pt;
+    padding-right: 20pt;
+}
+
+div.wrapper
+{
+    display: flex;
+    margin-left: 5pt;
+    margin-right: 5pt;
+    margin-bottom: 5pt;
+}
+
+div.info img
+{
+    width: 80%;
+    margin-left: 5pt;
+    margin-right: 5pt;
+}
+
+div.arrow
+{
+    width: 10%;
+    text-align: center;
+    background-color: #B2B2B2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    border-radius: 10pt;
+    color: #959595;
+    opacity: 0.5;
+}
+
+div.arrow:hover
+{
+    box-shadow: 2px 2px #000000;
+    background-color: #959595;
+    color: #373737;
+    opacity: 1;
+}
+
+div.arrow p
+{
+    font-size: 70pt;
+    vertical-align: middle;
+    overflow: hidden;
+    width: 100%;
+}
+
+/*
+    CSS for the products page
+*/
+
+div.productSearchBar
+{
+    padding-left: 10pt;
+    padding-right: 10pt;
+    margin-left: 15pt;
+    margin-right: 15pt;
+    margin-bottom: 5pt;
+    font-size: 10pt;
+    background-color: #373737;
+    color: #CFCFCF;
+    text-decoration: none;
+    float: right;
+    display: flex;
+    border-radius: 10pt;
+    width: 470pt;
+}
+
+div.productSearchBar div.text
+{
+    padding-top: 5pt;
+    padding-bottom: 5pt;
+    margin-right: 14pt;
+    width: 50%;
+    margin-left: 6pt;
+}
+
+div.productSearchBar input
+{
+    width: 100%;
+}
+
+div.productSearchBar div.type
+{
+    padding-top: 5pt;
+    padding-bottom: 5pt;
+    margin-right: 10pt;
+}
+
+div.productSearchBar div.price
+{
+    float: left;
+    padding-top: 5pt;
+    padding-bottom: 5pt;
+    margin-right: 10pt;
+}
+
+div.productSearchBar div.button
+{
+    float: right;
+    vertical-align: middle;
+    background-color: #CFCFCF;
+    color: #373737;
+    opacity: 0.5;
+    border-radius: 10pt;
+    margin-top: 5pt;
+    margin-bottom: 5pt;
+    padding-left: 10pt;
+    padding-right: 10pt;
+}
+
+div.productSearchBar div.button:hover
+{
+    box-shadow: 2px 2px #000000;
+    opacity: 1;
+}
+
+div.productSearchBar div.button p
+{
+    font-size: 20pt;
+    margin: 0;
+    padding: 0;
+}
+
+div.productsSpot
+{
+    width: 100%;
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+}
+
+div.card
+{
+    overflow: hidden;
+    background-color: #373737;
+    padding-top: 5pt;
+    padding-bottom: 5pt;
+    padding-left: 5pt;
+    padding-right: 5pt;
+    margin-left: 5pt;
+    margin-right: 5pt;
+    margin-bottom: 5pt;
+    text-align: left;
+    width: calc(25% - 20pt);
+    float: left;
+}
+
+div.card .cardImage
+{
+    width: 100%;
+    min-height: 30%;
+    max-height: 30%;
+    margin-bottom: 0pt;
+    float: center;
+}
+
+div.card .cardInfo
+{
+    overflow: hidden;
+    background-color: #CFCFCF;
+    margin-top: 0pt;
+    padding-left: 10pt;
+    padding-right: 10pt;
+    padding-bottom: 0pt;
+}
+
+div.card .cardInfo h2
+{
+    font-size: 1.5vw;
+}
+
+div.card .cardInfo .cardDescription
+{
+    overflow-y: auto;
+    height: 75pt;
+    padding-right: 5pt;
+}
+
+/*
+    CSS for the orders page
+*/
+
+div.orderSection
+{
+    float: center;
+    display: flex;
+}
+
+div.orderInfo
+{
+    width: 50%;
+    margin-top: 5pt;
+    margin-bottom: 5pt;
+    margin-left: 20pt;
+    margin-right: 20pt;
+    padding-left: 10pt;
+    padding-right: 10pt;
+    box-sizing: border-box;
+}
+
+div.orderInfo h1
+{
+    font-size: 30pt;
+    text-decoration: underline;
+    text-decoration-color: #373737;
+}
+
+div.orderInfo p
+{
+    font-size: 14pt;
+}
+
+div.orderInfo h3
+{
+    font-size: 14pt;
+    color: #C8372B;
+}
+
+div.orderForm
+{
+    background-color: #373737;
+    color: #CFCFCF;
+    border-radius: 10pt;
+    margin: 20pt;
+    padding: 10pt;
+    width: 50%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+div.orderForm h1
+{
+    text-align: center;
+    margin-top: 0pt;
+    margin-bottom: 5pt;
+}
+
+div.orderForm h4
+{
+    font-size: 10pt;
+    margin-top: 10pt;
+    margin-bottom: 0pt;
+}
+
+div.orderForm input[type = "tel"]
+{
+    text-align: center;
+}
+
+div.orderForm div.buttons
+{
+    text-align: right;
+    font-size: 16pt;
+}
+
+div.orderForm textArea
+{
+    width: calc(100% - 10pt);
+    max-width: calc(100% - 10pt);
+    padding: 5pt;
+    resize: vertical;
+}
+
+div.orderForm input[type = "text"]
+{
+    width: calc(100% - 5pt);
+    max-width: calc(100% - 5pt);
+}
+
+div.orderForm span
+{
+    color: #C8372B;
+    font-size: 8pt;
+}
+
+div.orderForm span.submitText
+{
+    color:  #63AA50;
+}

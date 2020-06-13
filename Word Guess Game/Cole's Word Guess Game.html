@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Cole's Word Guess Game </title>
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <link rel = "stylesheet" href = "style.css">
+        <script type = "text/javascript" src = "javascript.js">
+        </script> 
+	</head>
+	<body onload = prepareRound()>
+        <audio id = "sparkle" src = "sparkle.wav"></audio>
+        <audio id = "guess" src = "guess.wav"></audio>
+
+        <div class = "header">
+            <h1> Welcome to Cole's Guessing Game! </h1>
+            <p>
+                Guess the scrambled word, and see how many points you get! <br>
+                The less guesses, the more points you'll get, but be careful... Every time you guess, the word gets longer!
+            </p>
+        </div>
+
+        <div style = "display: flex;">
+            <div id = "gameWindow" class = "game">
+                <h2> Guess the word: </h2>
+                <h1 id = "scrambledWord"> TESTWORD </h1>
+                <h3 id = "numGuesses"> You have 3 guesses left. What is your guess? </h3>
+                <input type = "text" id = "guessBox" minlength = 3 maxlength = 20 size = 21 style = "font-size: 30pt; text-align: center;"> <br> <br>
+                <button id = "inputButton" onclick = "checkAnswer()"> Guess! </button>
+            </div>
+    
+            <div class = "scoreboard">
+                <center>
+                <table border = 2 id = "roundTable">
+                    <tr>
+                        <th width = "20%"> Round # </th> <th width = "50%"> Word </th> <th width = "15%"> Points </th> <th width = "15%"> Stars </th>
+                    </tr>
+                    <tr>
+                        <td class = "identifier"> Round 1 </td> <td id = "round1Word"></td> <td id = "round1Score"></td> <td id = "round1Stars"></td>
+                    </tr>
+                    <tr>
+                        <td class = "identifier"> Round 2 </td> <td id = "round2Word"></td> <td id = "round2Score"></td> <td id = "round2Stars"></td>
+                    </tr>
+                    <tr>
+                        <td class = "identifier"> Round 3 </td> <td id = "round3Word"></td> <td id = "round3Score"></td> <td id = "round3Stars"></td>
+                    </tr>
+                    <tr>
+                        <td class = "identifier"> Round 4 </td> <td id = "round4Word"></td> <td id = "round4Score"></td> <td id = "round4Stars"></td>
+                    </tr>
+                    <tr>
+                        <td class = "identifier"> Round 5 </td> <td id = "round5Word"></td> <td id = "round5Score"></td> <td id = "round5Stars"></td>
+                    </tr>
+                    <tr>
+                        <td class = "identifier"> Round 6 </td> <td id = "round6Word"></td> <td id = "round6Score"></td> <td id = "round6Stars"></td>
+                    </tr>
+                    <tr>
+                        <td class = "identifier"> Round 7 </td> <td id = "round7Word"></td> <td id = "round7Score"></td> <td id = "round7Stars"></td>
+                    </tr>
+                    <tr>
+                        <td class = "identifier"> Round 8 </td> <td id = "round8Word"></td> <td id = "round8Score"></td> <td id = "round8Stars"></td>
+                    </tr>
+                    <tr>
+                        <td class = "identifier"> Round 9 </td> <td id = "round9Word"></td> <td id = "round9Score"></td> <td id = "round9Stars"></td>
+                    </tr>
+                    <tr>
+                        <td class = "identifier"> Round 10 </td> <td id = "round10Word"></td> <td id = "round10Score"></td> <td id = "round10Stars"></td>
+                    </tr>
+                    <tr>
+                        <td class = "identifier"> Round 11 </td> <td id = "round11Word"></td> <td id = "round11Score"></td> <td id = "round11Stars"></td>
+                    </tr>
+                    <tr>
+                        <td class = "identifier"> Round 12 </td> <td id = "round12Word"></td> <td id = "round12Score"></td> <td id = "round12Stars"></td>
+                    </tr>
+                    <tr>
+                        <td class = "identifier"> Round 13 </td> <td id = "round13Word"></td> <td id = "round13Score"></td> <td id = "round13Stars"></td>
+                    </tr>
+                    <tr>
+                        <td class = "identifier"> Round 14 </td> <td id = "round14Word"></td> <td id = "round14Score"></td> <td id = "round14Stars"></td>
+                    </tr>
+                    <tr>
+                        <td class = "identifier"> Round 15 </td> <td id = "round15Word"></td> <td id = "round15Score"></td> <td id = "round15Stars"></td>
+                    </tr>
+                    <tr>
+                        <td class = "identifier"> Round 16 </td> <td id = "round16Word"></td> <td id = "round16Score"></td> <td id = "round16Stars"></td> </td>
+                    </tr>
+                    <tr>
+                        <td class = "identifier"> Round 17 </td> <td id = "round17Word"></td> <td id = "round17Score"></td> <td id = "round17Stars"></td>
+                    </tr>
+                    <tr>
+                        <td class = "identifier"> Round 18 </td> <td id = "round18Word"></td> <td id = "round18Score"></td> <td id = "round18Stars"></td>
+                    </tr>
+                    <tr>
+                        <td colspan = 2 class = "identifier" style = "text-align: right;"> <strong>Total:</strong> </td> <td id = "totalScore"> 0 </td> <td id = "totalStars"> 0 </td>
+                    </tr>
+                </table>
+                </center>
+            </div>
+        </div>
+
+        <div style = "background-color: #474747; padding: 5pt;"></div>
+
+        <div class = "footer">
+            <p>
+                Client Side Programming (CS 3120) - Assignment 6 <br>
+                By: <span style = "color: #000000;"> Courtney E. Cole </span>
+            </p>
+        </div>
+	</body>
+</html>

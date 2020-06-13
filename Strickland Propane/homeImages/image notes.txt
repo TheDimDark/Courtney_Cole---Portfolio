@@ -1,0 +1,3 @@
+all images for display on the home page should be sizes 960 x 500 px
+
+it isn't a requirement, but it sure does make things look good

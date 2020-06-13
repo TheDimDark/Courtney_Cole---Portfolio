@@ -1,0 +1,3 @@
+all images for display on the product page should be sizes 500 x 500 px
+
+it isn't a requirement, but it sure does make things look good

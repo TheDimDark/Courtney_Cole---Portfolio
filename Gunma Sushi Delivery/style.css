@@ -1,0 +1,644 @@
+*
+{
+    font-family: "Tahoma", "Geneva", sans-serif;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-image: url('assets/bg.jpg');
+}
+
+div.backwall
+{
+    background-color: rgba(33, 33, 33, 0.9);
+
+    padding: 5px;
+
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 100px;
+    
+    overflow: hidden;
+}
+
+div.submitbutton
+{
+    position: fixed;
+
+    background-color: rgba(255, 55, 0, 1.0);
+    
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(255, 55, 0, 1.0);
+    border-radius: 5px;
+
+    font-size: 48px;
+    color: rgba(255, 255, 255, 1.0);
+    text-align: center;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    bottom: 15px;
+    right: 25px;
+    
+    overflow: hidden;
+
+    cursor: pointer;
+}
+div.submitbutton:hover
+{
+    background-color: rgba(215, 15, 0, 1.0);
+}
+
+/* Below content is specifically used in the popups */
+div.popup
+{
+    background-color: rgba(0, 0, 0, 0.4);
+
+    position: fixed;
+
+    z-index: 1;
+
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: auto;
+    
+    display: none;
+}
+
+div.popup div.content 
+{
+    background-color: rgba(255, 255, 255, 1.0);
+
+    padding: 20px;
+    margin: 10%;
+
+    width: 80%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+div.popup div.content h2.text
+{
+    text-align: center;
+
+    width: 100%;
+}
+
+div.popup div.content p.time
+{
+    font-size: 16px;
+
+    margin: 5px;
+}
+
+div.popup div.content div.closebutton
+{
+    background-color: rgba(150, 150, 150, 1.0);
+    
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(150, 150, 150, 1.0);
+    border-radius: 5px;
+
+    font-size: 20px;
+    color: rgba(255, 255, 255, 1.0);
+    text-align: center;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 0px;
+
+    width: 50%;
+    
+    overflow: hidden;
+
+    cursor: pointer;
+}
+div.popup div.content div.closebutton:hover
+{
+    background-color: rgba(110, 110, 110, 1.0);
+}
+
+
+div.popup div.content div.orderspacing
+{
+    padding: 10px;
+
+    width: 50%;
+}
+
+div.popup div.content div.orderdisplay
+{
+    background-color: rgba(55, 55, 55, 1.0);
+
+    padding: 15px;
+
+    width: 100%;
+    height: 100%;
+}
+
+div.popup div.content div.orderdisplay p.orderheader
+{
+    color: rgba(255, 255, 255, 1.0);
+
+    text-align: center;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    margin: 5px;
+}
+
+div.popup div.content div.orderdisplay p.sushilist
+{
+    color: rgba(255, 255, 255, 1.0);
+
+    font-size: 16px;
+
+    margin: 5px;
+}
+
+div.popup div.content div.orderdisplay p.ordertotal
+{
+    color: rgba(255, 255, 255, 1.0);
+
+    font-size: 20px;
+
+    margin: 5px;
+}
+
+div.popup div.content div.orderdisplay p.ordertotal span
+{
+    color: rgba(255, 55, 0, 1.0);
+}
+
+div.popup div.content div.orderdisplay hr
+{
+    background-color: rgba(255, 255, 255, 1.0);
+
+    border: none;
+    height: 2px;
+}
+
+div.popup div.content hr.vertical
+{
+    background-color: rgba(55, 55, 55, 1.0);
+}
+
+div.popup div.content div.orderform h2
+{
+    margin: 0px;
+}
+
+div.popup div.content div.orderform p
+{
+    margin: 5px;
+}
+
+div.popup div.content div.orderform input[type="text"]
+{
+    font-family: "Tahoma", "Geneva", sans-serif;
+    font-size: 16px;
+}
+
+div.popup div.content div.orderform textarea
+{
+    width: 100%;
+
+    margin-bottom: 10px;
+}
+
+div.popup div.content div.orderform input[type="submit"]
+{
+    background-color: rgba(0, 132, 255, 1.0);
+    
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(0, 132, 255, 1.0);
+    border-radius: 5px;
+
+    font-size: 20px;
+    color: rgba(255, 255, 255, 1.0);
+    text-align: center;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    margin: 2px;
+    
+    overflow: hidden;
+
+    width: 100%;
+
+    cursor: pointer;
+}
+div.popup div.content div.orderform input[type="submit"]:hover
+{
+    background-color: rgba(0, 92, 215, 1.0);
+}
+
+div.popup div.content div.orderform div.cancelbutton
+{
+    background-color: rgba(150, 150, 150, 1.0);
+    
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(150, 150, 150, 1.0);
+    border-radius: 5px;
+
+    font-size: 20px;
+    color: rgba(255, 255, 255, 1.0);
+    text-align: center;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    margin: 2px;
+
+    width: 100%;
+    
+    overflow: hidden;
+
+    cursor: pointer;
+}
+div.popup div.content div.orderform div.cancelbutton:hover
+{
+    background-color: rgba(110, 110, 110, 1.0);
+}
+
+div.nav
+{
+    background-color: rgba(255, 255, 255, 0.9);
+
+    padding: 5px;
+
+    text-align: center;
+}
+
+div.nav hr
+{
+    background-color: rgba(33, 33, 33, 1.0);
+
+    border: none;
+    height: 2px;
+}
+
+div.nav p.navinformation
+{
+    color: rgba(33, 33, 33, 1.0);
+
+    font-size: 12px;
+    font-weight: none;
+
+    margin: 2px;
+}
+
+div.nav p.navinformation a
+{
+    color: rgba(101, 165, 230, 1.0);
+
+    font-size: 16px;
+    text-decoration: none;
+}
+div.nav p.navinformation a:hover
+{
+    text-decoration: underline dotted;
+}
+
+/* Below content is specifically used in the header */
+
+div.header
+{
+    text-align: center;
+}
+
+div.header img.logo
+{
+    height: 100px;
+    width: 100px;
+}
+
+div.header p.companyname
+{
+    color: rgba(255, 255, 255, 1.0);
+
+    font-size: 48px;
+    font-weight: none;
+
+    margin: 2px;
+}
+
+div.header hr
+{
+    background-color: rgba(255, 255, 255, 1.0);
+
+    border: none;
+    height: 2px;
+}
+
+/* Below content is specifically used in the middle */
+
+div.middle
+{
+    text-align: center;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+div.middle div.sushispace
+{
+    padding: 10px;
+
+    width: 25%;
+}
+
+div.middle div.sushi
+{
+    background-color: rgba(255, 255, 255, 1.0);
+
+    padding: 5px;
+
+    width: 100%;
+
+    overflow-wrap: break-word;
+}
+
+div.middle div.sushi p.name
+{
+    text-align: center;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    margin: 5px;
+}
+
+div.middle div.sushi img.food
+{
+    border-color: rgba(0, 0, 0, 1.0);
+    border-style: solid;
+    border-width: 2px;
+
+    padding-top: 0px;
+
+    width: 100%;
+}
+
+div.middle div.sushi p.description
+{
+    text-align: center;
+
+    color: rgba(55, 55, 55, 1.0);
+    font-size: 12px;
+
+    margin: 5px;
+}
+
+div.middle div.sushi input[type="text"]
+{
+    font-family: "Tahoma", "Geneva", sans-serif;
+    font-size: 16px;
+}
+
+/* Below content is specifically used in the footer */
+
+div.footer
+{
+    text-align: center;
+}
+
+div.footer hr
+{
+    background-color: rgba(255, 255, 255, 1.0);
+
+    border: none;
+    height: 2px;
+}
+
+div.footer p.footerinformation
+{
+    color: rgba(255, 255, 255, 1.0);
+
+    font-size: 12px;
+    font-weight: none;
+
+    margin: 2px;
+}
+
+div.footer p.footerinformation a
+{
+    color: rgba(101, 165, 230, 1.0);
+
+    font-size: 16px;
+    text-decoration: none;
+}
+div.footer p.footerinformation a:hover
+{
+    text-decoration: underline dotted;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Below content is specifically for the Order Handler page */
+
+div.orderHolder
+{
+    background-color: rgba(33, 33, 33, 0.9);
+
+    width: 100%;
+}
+
+div.orderHolder h2.header
+{
+    color: rgba(255, 255, 255, 1.0);
+    font-size: 24px;
+    font-weight: bold;
+
+    margin: 5px;
+
+    width: 100%;
+}
+
+div.orderHolder div.readyOrders, div.unpreppedOrders, div.finishedOrders
+{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+div.orderHolder div.readyOrders div.orderSpace
+{
+    padding: 10px;
+
+    width: 20%;
+}
+div.orderHolder div.unpreppedOrders div.orderSpace
+{
+    padding: 10px;
+
+    width: 20%;
+}
+div.orderHolder div.finishedOrders div.orderSpace
+{
+    padding: 10px;
+
+    width: 20%;
+}
+
+div.orderHolder div.readyOrders div.orderSpace div.order
+{
+    background-color: rgba(255, 255, 255, 1.0);
+
+    border-color: rgba(230, 105, 80, 1.0);
+    border-style: solid;
+    border-width: 4px;
+
+    color: rgba(0, 0, 0, 1.0);
+
+    padding: 5px;
+}
+div.orderHolder div.unpreppedOrders div.orderSpace div.order
+{
+    background-color: rgba(255, 255, 255, 1.0);
+
+    border-color: rgba(101, 165, 230, 1.0);
+    border-style: solid;
+    border-width: 4px;
+
+    color: rgba(0, 0, 0, 1.0);
+
+    padding: 5px;
+}
+div.orderHolder div.finishedOrders div.orderSpace div.order
+{
+    background-color: rgba(255, 255, 255, 1.0);
+
+    border-color: rgba(150, 150, 150, 1.0);
+    border-style: solid;
+    border-width: 4px;
+
+    color: rgba(0, 0, 0, 1.0);
+
+    padding: 5px;
+}
+
+div.order h2
+{
+    margin: 0px;
+}
+
+div.order p
+{
+    margin-top: 4px;
+    margin-bottom: 0px;
+}
+
+div.order p.time
+{
+    color: rgba(55, 55, 55, 1.0);
+    font-size: 12px;
+}
+
+div.order input[type="submit"]
+{
+    background-color: rgba(150, 150, 150, 1.0);
+    
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(150, 150, 150, 1.0);
+    border-radius: 5px;
+
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1.0);
+    text-align: center;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    overflow: hidden;
+
+    width: 100%;
+
+    cursor: pointer;
+}
+div.order input[type="submit"]:hover
+{
+    background-color: rgba(110, 110, 110, 1.0);
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Below content is specifically for the Shareholder page */
+
+div.backing
+{
+    background-color: rgba(33, 33, 33, 0.9);
+
+    width: 100%;
+
+    margin-top: 5px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+div.backing div.statsspace
+{
+    padding: 10px;
+
+    width: 50%;
+}
+div.backing div.statsspace div.stats
+{
+    background-color: rgba(255, 255, 255, 1.0);
+
+    padding: 5px;
+}
+
+div.backing div.statsspace div.stats h2.header
+{
+    color: rgba(0, 0, 0, 1.0);
+    font-size: 24px;
+    font-weight: bold;
+
+    margin: 5px;
+
+    width: 100%;
+}
+
+div.backing div.statsspace div.stats p
+{
+    color: rgba(0, 0, 0, 1.0);
+    font-size: 16px;
+
+    margin: 5px;
+}

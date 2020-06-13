@@ -1,0 +1,59 @@
+INSERT INTO CEC_GSD_Sushi
+(Name, Price, Description, Image_Name)
+VALUES
+('Tempura Roll', 5.99, 'Shrimp tempura, avocado, tempura flakes, and eel sauce.', 'tempura_roll.jpg');
+
+INSERT INTO CEC_GSD_Sushi
+(Name, Price, Description, Image_Name)
+VALUES
+('Spider Roll', 6.99, 'Soft-shell crab tempura, cucumber, avocado, and spicy mayo.', 'spider_roll.jpg');
+
+INSERT INTO CEC_GSD_Sushi
+(Name, Price, Description, Image_Name)
+VALUES
+('Spicy Tuna Roll', 4.99, 'Tuna, mayo, and chili sauce.', 'spicy_tuna_roll.jpg');
+
+INSERT INTO CEC_GSD_Sushi
+(Name, Price, Description, Image_Name)
+VALUES
+('Tiger Roll', 8.99, 'Avocado, shrimp tempura, cucumber, tobiko, and signature sauce.', 'tiger_roll.jpg');
+
+INSERT INTO CEC_GSD_Sushi
+(Name, Price, Description, Image_Name)
+VALUES
+('Rainbow Roll', 7.99, 'Fish cake, avocado, cucumber, tuna, avocado, salmon, shrimp, and yellowtail.', 'rainbow_roll.jpg');
+
+INSERT INTO CEC_GSD_Sushi
+(Name, Price, Description, Image_Name)
+VALUES
+('Vegetable Roll', 5.99, 'Cucumber, fresh carrot, scallion, avocado, asparagus, and cream cheese.', 'vegetable_roll.jpg');
+
+INSERT INTO CEC_GSD_Sushi
+(Name, Price, Description, Image_Name)
+VALUES
+('Surf & Turf', 6.99, 'Cucumber, fish cake, beef, carrot, tuna, salmon, avocado, and signature sauce.', 'surf_and_turf_roll.jpg');
+
+INSERT INTO CEC_GSD_Sushi
+(Name, Price, Description, Image_Name)
+VALUES
+('Dynamite Roll', 7.99, 'Shrimp tempura, yellowtail, bean sprouts, carrots, avocado, cucumber, chili, and spicy mayo.', 'dynamite_roll.jpg');
+
+INSERT INTO CEC_GSD_Sushi
+(Name, Price, Description, Image_Name)
+VALUES
+('California Roll', 4.99, 'Crab, avocado, cucumber, and sesame seeds.', 'california_roll.jpg');
+
+INSERT INTO CEC_GSD_Sushi
+(Name, Price, Description, Image_Name)
+VALUES
+('Dragon Roll', 7.99, 'Eel, crab, avocado outside, and eel sauce.', 'dragon_roll.jpg');
+
+INSERT INTO CEC_GSD_Sushi
+(Name, Price, Description, Image_Name)
+VALUES
+('Philadelphia Roll', 4.99, 'Salmon, avocado, and cream cheese.', 'philadelphia_roll.jpg');
+
+INSERT INTO CEC_GSD_Sushi
+(Name, Price, Description, Image_Name)
+VALUES
+('Caterpillar Roll', 5.99, 'Eel, cucumber, and avocado.', 'caterpillar_roll.jpg');

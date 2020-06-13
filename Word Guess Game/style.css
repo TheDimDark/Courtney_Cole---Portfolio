@@ -1,0 +1,126 @@
+body
+{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+div.header
+{
+    text-align: center;
+    background-color: #474747;
+    padding-top: 5pt;
+    padding-bottom: 20pt;
+    padding-left: 5pt;
+    padding-right: 5pt;
+}
+
+div.header h1
+{
+    color: #FFC300;
+    font-size: 30pt;
+}
+
+div.header p
+{
+    
+    color: #F0F0F0;
+}
+
+div.game
+{
+    text-align: center;
+    background-color: #F0F0F0;
+    padding-top: 5pt;
+    padding-bottom: 20pt;
+    padding-left: 20pt;
+    padding-right: 20pt;
+    float: center;
+    width: 55%;
+}
+
+div.game h2
+{
+    color:  #474747;
+    font-size: 30pt;
+}
+
+div.game h1
+{
+    font-size: 35pt;
+}
+
+div.game button
+{
+    padding-left: 10pt;
+    padding-right: 10pt;
+    font-size: 30pt;
+    color:  #474747;
+    background-color: #FFC300;
+    border-color:  #000000;
+}
+
+div.game span
+{
+    animation-name: fadeIn;
+    font-size: 50pt;
+    animation-duration: 2500ms;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+
+div.scoreboard
+{
+    text-align: center;
+    background-color: #FFC300;
+    padding-top: 5pt;
+    padding-bottom: 5pt;
+    padding-left: 5pt;
+    padding-right: 5pt;
+    float: center;
+    width: 45%;
+}
+
+div.scoreboard table
+{
+    text-align: center;
+    background-color: #F0F0F0;
+    border-width: 0;
+    padding: 5pt;
+    width: 100%;
+}
+
+div.scoreboard th, td
+{
+    padding-left: 5pt;
+    padding-right: 5pt;
+}
+
+div.scoreboard td.identifier
+{
+    color:  #474747;
+    background-color:  #CACACA;
+}
+
+div.scoreboard td
+{
+    color:  #F0F0F0;
+    background-color:  #474747;
+}
+
+div.footer
+{
+    text-align: right;
+    padding-top: 5pt;
+    padding-bottom: 5pt;
+    padding-left: 20pt;
+    padding-right: 20pt;
+}
+
+
+div.footer p
+{
+    font-size: 12pt;
+    color:  #474747;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Strickland Propane </title>
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+        <link rel = "stylesheet" href = "style.css">
+        <script  type = "text/javascript" src = "javascript.js"></script>
+	</head>
+	<body onLoad = "clearForm()">
+        <div class = "header">
+            <h1> Strickland Propane </h1>
+            <h3> Taste the meat, not the heat. </h3>
+        </div>
+            
+        <div class = "navigationBar">
+            <a href = "index.html"> Home </a> <a href = "products.html"> Browse Our Products </a> <a href = "orders.html"> File a Work Order </a>
+        </div>
+
+        <div class = "general">
+            <div class = "orderSection">
+                <div class = "orderInfo">
+                    <h1> Something ain't right? </h1>
+                    <p>
+                        No problem! Strickland Propane is here for you. Whether it's broken grill or just a tank refill, 
+                        just fill out the order form and we will fix you right up.
+                    </p>
+                    <p>
+                        Our assistant manager and 41-time employee of the month, Hank Hill, will see to your needs. No matter 
+                        how tricky or how trivial, we will see to it that your propane problems are fixed as soon as possible.
+                    </p>
+                    <h3> Payment estimates are offered upon arrival. </h3>
+                </div>
+                <div class = "orderForm">
+                    <h1> Work Order Form: </h1>
+
+                    <label> Full Name: </label> <span id = "nameRequired"></span>
+                    <input id = "fullName" type = "text"/> <br>
+
+                    <label> Address: </label> <span id = "addressRequired"></span>
+                    <input id = "address" type = "text"/> <br>
+
+                    <label> Email: </label> <span id = "emailRequired"></span>
+                    <input id = "email" type = "text"/> <br>
+
+                    <label> Phone Number: </label>
+                    <input id = "phoneNumber1" type = "tel" size = "3" maxlength = "3" oninput = "managePhoneNumber('phoneNumber1', 'phoneNumber2', 'phoneNumber1');"/> -
+                    <input id = "phoneNumber2" type = "tel" size = "3" maxlength = "3" oninput = "managePhoneNumber('phoneNumber2', 'phoneNumber3', 'phoneNumber1');"/> -
+                    <input id = "phoneNumber3" type = "tel" size = "4" maxlength = "4" oninput = "managePhoneNumber('phoneNumber3', 'phoneNumber3', 'phoneNumber2');"/> 
+                    <span id = "phoneRequired"></span> <br>
+
+                    <label> Order Type: </label>
+                    <select id = "orderType">
+                        <option value = "NONE"> None Selected </option>
+                        <option value = "REPAIR"> Repair </option>
+                        <option value = "REFILL"> Refill </option>
+                        <option value = "INSTALLATION"> Installation </option>
+                        <option value = "DISPOSAL"> Disposal </option>
+                        <option value = "OTHER"> Other </option>
+                    </select> <span id = "typeRequired"></span> <br>
+
+                    <label> Additional Information: </label> <span id = "noteRequired"></span> <br>
+                    <textarea id = "additionalInfo" rows = "5" wrap = "soft"></textarea>
+
+                    <h4> PLEASE NOTE: Strickland Propane will not share your personal information. </h4>
+                    <div class = "buttons">
+                        <span id = "submissionInfo" class = "submitText"></span>
+                        <button onClick = "checkRequirements()"> Submit Order </button>
+                        <button onClick = "clearForm()"> Reset </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "footer">
+            <div class = "line"></div>
+            <br>
+            <p> Strickland Propane&#8482; is property of Buck Strickland. </p>
+            <p> To contact our Human Resources team, please use one of the methods below: </p>
+            <p> Email us at <a href = "mailto:Donna@StricklandPropane.com"> Donna@StricklandPropane.com </a> </p>
+            <p> Call us at (912) 748-4422 </p>
+            <br>
+            <div class = "line"></div>
+        </div>
+	</body>
+</html>
